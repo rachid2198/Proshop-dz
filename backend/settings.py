@@ -13,10 +13,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 from pickle import TRUE
 from datetime import timedelta
-import os
 import django_heroku
 
-django_heroku.settings(locals())
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -189,6 +188,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS= True
 
 ALLOWED_HOSTS = ['proshop-dz.herokuapp.com', '127.0.0.1:8000', 'localhost']
+
+django_heroku.settings(locals())
 
 
 
