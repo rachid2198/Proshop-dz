@@ -14,6 +14,9 @@ from pathlib import Path
 from pickle import TRUE
 from datetime import timedelta
 import os
+import django_heroku
+
+django_heroku.settings(locals())
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -187,6 +190,5 @@ CORS_ALLOW_ALL_ORIGINS= True
 
 ALLOWED_HOSTS = ['proshop-dz.herokuapp.com', '127.0.0.1:8000', 'localhost']
 
-import django_heroku
-django_heroku.settings(locals())
+
 
