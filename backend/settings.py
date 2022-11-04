@@ -30,9 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ypi#+#6u##&b$(z*tl(l)jx5b-suz(nuame+i_bim5pvs)##87'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['proshop-dz.herokuapp.com', '127.0.0.1:8000', 'localhost']
 
 
 # Application definition
@@ -192,7 +192,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS= True
 
-ALLOWED_HOSTS = ['proshop-dz.herokuapp.com', '127.0.0.1:8000', 'localhost']
 
 django_heroku.settings(locals())
 
