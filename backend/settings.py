@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-ypi#+#6u##&b$(z*tl(l)jx5b-suz(nuame+i_bim5pvs)##87
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['proshop-dz.herokuapp.com', '127.0.0.1:8000', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
