@@ -14,7 +14,7 @@ const initialState={
 export const getProductList=createAsyncThunk('products/getProductList'
 , async(keyword="",thunkAPI)=>{
     try{
-    const {data}=await axios.get(`/api/products${keyword}`)
+    const {data}=await axios.get(`/api/products${keyword}/`)
     return data
     }catch(error){
     return thunkAPI.rejectWithValue(
