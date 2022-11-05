@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'base.apps.BaseConfig',
+    'cloudinary',
+    'cloudinary_storage',
     
 ]
 
@@ -167,6 +169,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dsdsjkvpd',
+    'API_KEY': 831969542646642,
+    'API_SECRET': '8hoa8gwezMOZhrTK_cgjXJ30kZE',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 STATIC_URL = '/static/'
 
