@@ -22,7 +22,7 @@ def getProducts(request):
     if query==None:
         query=""
     
-    products=Product.objects.filter(name__icontains=query)
+    products=Product.objects.filter(name__icontains=query).order_by('-numReviews')
     serializer=ProductSerializer(products, many=True)
     return Response(serializer.data)
 
