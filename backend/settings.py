@@ -127,8 +127,19 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {}
-DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+DATABASES = {
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': 'proshop',
+            'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': 'mongodb+srv://rachid:znq@coding-addict-tut.pamhaiy.mongodb.net/?retryWrites=true&w=majority'
+            }  
+        }
+}
+
+# DATABASES = {}
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 # DATABASES = {
 #     'default': {
