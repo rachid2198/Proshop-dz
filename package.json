@@ -6,7 +6,6 @@
   "proxy": "https://proshop-dz.herokuapp.com",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
-    
     "axios": "^0.27.2",
     "react": "^17.0.2",
     "react-bootstrap": "^2.5.0",
