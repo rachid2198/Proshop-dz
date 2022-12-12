@@ -9,3 +9,4 @@ myenv/
 db.sqlite3
 staticfiles/
 static/
+client/
